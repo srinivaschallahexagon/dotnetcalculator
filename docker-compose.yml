@@ -2,9 +2,10 @@ version: '3.8'
 
 services:
   calculator-web:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: srinivasreddy102698/dotnet-calculator:latest
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
     ports:
       - "8080:8080"
     environment:
